@@ -22,6 +22,7 @@ Install Node.
 ```sh
 nvm install v18
 ```
+Open a terminal
 
 To ensure you have the latest NPM:
 
