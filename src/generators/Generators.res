@@ -47,7 +47,10 @@ let mod: array<Generator.generatorDef> = [
   DalekModDalekGenerator.generator,
 ]
 
-let other: array<Generator.generatorDef> = [AmogusBendableGenerator.generator]
+let other: array<Generator.generatorDef> = [
+  AmogusBendableGenerator.generator,
+  MinecraftMickeyEarsGenerator.generator,
+]
 
 // Incomplete and in development
 let dev: array<Generator.generatorDef> = isDevEnvironment
