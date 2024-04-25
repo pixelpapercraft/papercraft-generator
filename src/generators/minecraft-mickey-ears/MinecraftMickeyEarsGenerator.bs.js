@@ -184,7 +184,7 @@ function script(param) {
         64,
         64,
         64
-      ], undefined, undefined, undefined, undefined, undefined, undefined);
+      ], undefined, undefined, undefined);
   if (showOverlay) {
     Minecraft.drawCuboid(textureId, steve.overlay.head, [
           x$1,
@@ -193,7 +193,7 @@ function script(param) {
           64,
           64,
           64
-        ], undefined, undefined, undefined, undefined, undefined, undefined);
+        ], undefined, undefined, undefined);
   }
   if (showFolds) {
     Generator.drawImage("Folds", [
