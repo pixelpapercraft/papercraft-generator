@@ -47,7 +47,14 @@ let mod: array<Generator.generatorDef> = [
   DalekModDalekGenerator.generator,
 ]
 
+<<<<<<< Updated upstream
 let other: array<Generator.generatorDef> = [AmogusBendableGenerator.generator,]
+=======
+let other: array<Generator.generatorDef> = [
+  AmogusBendableGenerator.generator,
+  MinecraftMickeyEarsGenerator.generator,
+]
+>>>>>>> Stashed changes
 
 // Incomplete and in development
 let dev: array<Generator.generatorDef> = isDevEnvironment
