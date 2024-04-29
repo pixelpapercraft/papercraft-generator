@@ -19,13 +19,7 @@ var id = "minecraft-mickey-ears";
 
 var name = "Minecraft Mickey Ears";
 
-var history = [
-  "Originally developed by ArgentiCityZen14.",
-  "06 Feb 2015 lostminer - Add user variables.",
-  "13 Feb 2015 lostminer - Update to use new version of generator.",
-  "17 Jul 2021 M16 - Updated generator photo.",
-  "12 Jun 2022 NinjolasNJM - Updated to use Minecraft module, and added Action Figure option"
-];
+var history = ["Originally developed by ArgentiCityZen14."];
 
 var instructions = "\n## How to use the Minecraft Mickey Ears Generator?\n\n1. Select your Minecraft skin file.\n2. Choose the your Minecraft skin file model type.\n3. Download and print your Mickey Ears papercraft.\n";
 
@@ -45,6 +39,10 @@ var images = [
   {
     id: "Folds",
     url: requireImage("Folds")
+  },
+  {
+    id: "Minnie Bow",
+    url: requireImage("Minnie-Bow")
   }
 ];
 
@@ -151,6 +149,7 @@ function script(param) {
         });
   }
   var showFolds = Generator.defineAndGetBooleanInput("Show Folds", true);
+  var actionFigure = Generator.defineAndGetBooleanInput("Minnie Bow", false);
   var steve = Minecraft.Character.steve;
   Generator.drawImage("Background", [
         0,
@@ -200,12 +199,13 @@ function script(param) {
           x$1 - 26 | 0,
           y$1 - 1 | 0
         ]);
-    return Generator.drawImage("Action Figure", [
+  }
+  if (actionFigure) {
+    return Generator.drawImage("Minnie Bow", [
                 x$1 + 64 | 0,
                 y$1 + 128 | 0
               ]);
   }
-  
 }
 
 var generator_thumbnail = thumbnail;
