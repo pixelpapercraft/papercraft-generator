@@ -123,8 +123,14 @@ var textures = [
     id: "EPCOT",
     url: requireTexture("Epcot"),
     standardWidth: 64,
-    standardHeight: 64
-  }
+    standardHeight: 64,
+  },
+  {
+    id: "Minnie",
+    url: requireTexture("Minnie"),
+    standardWidth: 64,
+    standardHeight: 64,
+  },
 ];
 
 function script(param) {
@@ -144,13 +150,15 @@ function script(param) {
             "Blaze",
             "R2-D2",
             "Mickey",
-            "EPCOT"
+            "Minnie",
+            "EPCOT",
           ]
         });
   }
   var showFolds = Generator.defineAndGetBooleanInput("Show Folds", true);
   var actionFigure = Generator.defineAndGetBooleanInput("Minnie Bow", false);
   var steve = Minecraft.Character.steve;
+
   Generator.drawImage("Background", [
         0,
         0
@@ -164,6 +172,10 @@ function script(param) {
     return ;
   }
   Generator.drawImage("Tabs", [
+        x$1 - 26 | 0,
+        y$1 - 1 | 0
+      ]);
+ Generator.drawImage("Folds", [
         x$1 - 26 | 0,
         y$1 - 1 | 0
       ]);
