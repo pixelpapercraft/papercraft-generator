@@ -135,8 +135,8 @@ let script = () => {
           "Blaze",
           "R2-D2",
           "Mickey",
-          "Minnie",
           "EPCOT",
+          "Minnie",
         ],
       },
     )
