@@ -25,6 +25,7 @@ let images: array<Generator.imageDef> = [
   {id: "Background", url: requireImage("Background")},
   {id: "Tabs", url: requireImage("Tabs")},
   {id: "Folds", url: requireImage("Folds")},
+    {id: "Minnie Bow", url: requireImage("Minnie-Bow")},
 ]
 
 let textures: array<Generator.textureDef> = [
@@ -136,6 +137,7 @@ let script = () => {
 
   // Define and get user variables
   let showFolds = Generator.defineAndGetBooleanInput("Show Folds", true)
+  let actionFigure = Generator.defineAndGetBooleanInput("Minnie Bow", false)
 
   let steve = Minecraft.Character.steve
 
@@ -164,7 +166,9 @@ let script = () => {
         //Generator.drawFoldLineCuboid((x, y), (64, 64, 64), ())
 
         Generator.drawImage("Folds", (x - 26, y - 1))
-        Generator.drawImage("Action Figure", (x + 64, y + 128))
+      }
+      if actionFigure {
+        Generator.drawImage("Minnie Bow", (x + 64, y + 128))
       }
     }
   }
