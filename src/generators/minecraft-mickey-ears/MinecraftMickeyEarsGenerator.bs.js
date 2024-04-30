@@ -206,6 +206,7 @@ function script(param) {
                 y$1 + 128 | 0
               ]);
   }
+  
 }
 
 var generator_thumbnail = thumbnail;
