@@ -130,8 +130,8 @@ var textures = [
     url: requireTexture("Minnie"),
     standardWidth: 64,
     standardHeight: 64
-  }
-    {
+  },
+  {
     id: "50th Anniversary",
     url: requireTexture("50"),
     standardWidth: 64,
@@ -156,8 +156,8 @@ function script(param) {
             "Blaze",
             "R2-D2",
             "Mickey",
-            "Minnie",
             "EPCOT",
+            "Minnie",
             "50th Anniversary"
           ]
         });
