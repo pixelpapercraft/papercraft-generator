@@ -136,6 +136,12 @@ var textures = [
     url: requireTexture("50"),
     standardWidth: 64,
     standardHeight: 64
+  },
+  {
+    id: "Donald Duck",
+    url: requireTexture("Donald"),
+    standardWidth: 64,
+    standardHeight: 64
   }
 ];
 
@@ -158,7 +164,8 @@ function script(param) {
             "Mickey",
             "EPCOT",
             "Minnie",
-            "50th Anniversary"
+            "50th Anniversary",
+            "Donald Duck"
           ]
         });
   }
