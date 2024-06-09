@@ -119,6 +119,12 @@ let textures: array<Generator.textureDef> = [
     standardWidth: 64,
     standardHeight: 64,
   },
+    {
+    id: "Donald Duck",
+    url: requireTexture("Donald"),
+    standardWidth: 64,
+    standardHeight: 64,
+  },
 ]
 
 let script = () => {
@@ -144,6 +150,7 @@ let script = () => {
           "EPCOT",
           "Minnie",
           "50th Anniversary",
+          "Donald Duck",
         ],
       },
     )
