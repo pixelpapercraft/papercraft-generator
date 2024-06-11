@@ -169,6 +169,9 @@ function script(param) {
           ]
         });
   }
+
+
+  var showFolds = true;
   var actionFigure = Generator.defineAndGetBooleanInput("Minnie Bow", false);
   var steve = Minecraft.Character.steve;
   Generator.drawImage("Background", [
