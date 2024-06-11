@@ -169,7 +169,6 @@ function script(param) {
           ]
         });
   }
-  var showFolds = Generator.defineAndGetBooleanInput("Show Folds", true);
   var actionFigure = Generator.defineAndGetBooleanInput("Minnie Bow", false);
   var steve = Minecraft.Character.steve;
   Generator.drawImage("Background", [
@@ -215,12 +214,10 @@ function script(param) {
           64
         ], undefined, undefined, undefined);
   }
-  if (showFolds) {
-    Generator.drawImage("Folds", [
-          x$1 - 26 | 0,
-          y$1 - 1 | 0
-        ]);
-  }
+  Generator.drawImage("Folds", [
+        x$1 - 26 | 0,
+        y$1 - 1 | 0
+      ]);
   if (actionFigure) {
     return Generator.drawImage("Minnie Bow", [
                 x$1 + 64 | 0,
