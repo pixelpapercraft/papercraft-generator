@@ -169,7 +169,7 @@ function script(param) {
           ]
         });
   }
-  var showFolds = Generator.defineAndGetBooleanInput("Show Folds", true);
+  var showFolds = true;
   var actionFigure = Generator.defineAndGetBooleanInput("Minnie Bow", false);
   var steve = Minecraft.Character.steve;
   Generator.drawImage("Background", [
