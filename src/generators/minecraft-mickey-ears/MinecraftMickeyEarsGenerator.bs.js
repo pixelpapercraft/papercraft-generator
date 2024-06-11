@@ -160,18 +160,15 @@ function script(param) {
             "Wither Skeleton",
             "Creeper",
             "Blaze",
-            "R2-D2",
             "Mickey",
-            "EPCOT",
             "Minnie",
-            "50th Anniversary",
-            "Donald Duck"
+            "Donald Duck",
+            "R2-D2",
+            "EPCOT",
+            "50th Anniversary"
           ]
         });
   }
-
-
-  var showFolds = true;
   var actionFigure = Generator.defineAndGetBooleanInput("Minnie Bow", false);
   var steve = Minecraft.Character.steve;
   Generator.drawImage("Background", [
