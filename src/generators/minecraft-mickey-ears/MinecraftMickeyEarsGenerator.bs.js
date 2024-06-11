@@ -165,7 +165,7 @@ function script(param) {
             "Donald Duck",
             "R2-D2",
             "EPCOT",
-            "50th Anniversary"
+            "50th Anniversary",
           ]
         });
   }
