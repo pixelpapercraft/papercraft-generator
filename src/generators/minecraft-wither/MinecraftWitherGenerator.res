@@ -7,14 +7,13 @@ let name = "Minecraft Wither"
 
 let history = ["01 Aug 2021 Hannibanni - Created."]
 
+let thumbnail: Generator.thumnbnailDef = {
+  url: Generator.requireImage("./images/thumbnail.jpeg"),
+}
+
 let instructions = {
   let witherTexture = Generator.requireImage("./instructions/wither.png")
-  `
-## TODO
-
-* Add a thumbnail image.
-* Make background the A4 page tempate with Pixel Papercraft footer.
-
+`
 ## How to use the Wither generator
 
 ### Option 1: Use an existing Wither skin
@@ -625,7 +624,7 @@ let generator: Generator.generatorDef = {
   id: id,
   name: name,
   history: history,
-  thumbnail: None,
+  thumbnail: Some(thumbnail),
   video: None,
   instructions: Some(<Generator.Markdown> {instructions} </Generator.Markdown>),
   images: images,

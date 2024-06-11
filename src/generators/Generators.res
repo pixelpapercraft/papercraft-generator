@@ -27,6 +27,7 @@ let mobCharacter: array<Generator.generatorDef> = [
 let mob: array<Generator.generatorDef> = [
   MinecraftCreeperGenerator.generator,
   MinecraftEndermanGenerator.generator,
+  MinecraftWitherGenerator.generator,
   MinecraftGolemGenerator.generator,
   MinecraftHorseGenerator.generator,
   MinecraftPigGenerator.generator,
@@ -48,11 +49,6 @@ let mod: array<Generator.generatorDef> = [
 ]
 
 let other: array<Generator.generatorDef> = [AmogusBendableGenerator.generator]
-
-// Incomplete and in development
-let dev: array<Generator.generatorDef> = isDevEnvironment
-  ? [MinecraftWitherGenerator.generator]
-  : []
 
 let test: array<Generator.generatorDef> = isDevEnvironment
   ? [ExampleGenerator.generator, TestingGenerator.generator]
