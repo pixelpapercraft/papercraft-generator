@@ -157,7 +157,7 @@ let script = () => {
   }
 
   // Define and get user variables
-  let showFolds = Generator.defineAndGetBooleanInput("Show Folds", true)
+  let showFolds = true;
   let actionFigure = Generator.defineAndGetBooleanInput("Minnie Bow", false)
 
   let steve = Minecraft.Character.steve
